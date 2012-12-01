@@ -42,31 +42,18 @@ table {
     border-spacing: 0;
 }
 
+.isHidden {
+    display: none;
+}
 
-.bgstretcher-area { text-align: left; }
-.bgstretcher, .bgstretcher UL, .bgstretcher UL LI {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.bgstretcher UL, .bgstretcher UL LI {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.bgstretcher {
-    background: black;
-    overflow: hidden;
+#contentHolder{
     width: 100%;
-    position: fixed;
-    z-index: 1;
-    _position: absolute; /*IE6 doesn't support fixed positioning*/
-    top: 0;
-    left: 0;
+    height: 100%;
+    float: left;
+    display: block;
 }
 
 ul.menu {
-    height: 20px;
     background-color: #000;
     padding:10px 0;
     color:#fff;
@@ -77,6 +64,7 @@ ul.menu li {
     width: 19%;
     display: inline-block;
     text-align: center;
+    cursor: pointer;
 }
 
 ul.menu li.last {
